@@ -1,0 +1,26 @@
+Lab_3_Espaço de Cores
+
+(1) Estude a teoria de conversão de cores.
+Color conversions:
+https://docs.opencv.org/4.x/de/d25/imgproc_color_conversions.html
+
+(2) Estude este programa de mudança do espaço RGB para HSV, e execute o programa com a webcam, e um objeto colorido.
+Changing Colorspaces
+https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+
+(a) Modifique este programa para salvar as imagens da webcam, da mascara, e do resultado, ao toque de uma tecla.
+
+(b) Modifique novamente, para realizar o rastreamento de uma cor, e aplicar na imagem resultante (imagem depois do mascaramento)  um dos filtros da aula anterior, na imagem de entrada da webcam, tal que a imagem fique visualmente agradável.
+
+(c) Adicionalmente modifique o programa para gravar um video dos experimentos de rastreamento.
+
+(3) Exercício em equipe:
+Tente encontrar uma maneira de extrair mais de um objeto colorido, por exemplo, extraia objetos vermelhos, azuis e verdes simultaneamente.
+
+Referências
+Função cvtColor()
+https://docs.opencv.org/4.x/d8/d01/group__imgproc__color__conversions.html#ga397ae87e1288a81d2363b61574eb8cab
+
+
+Color Space Conversions (nomes das constantes de conversao de espaço de cor):
+https://docs.opencv.org/4.x/d8/d01/group__imgproc__color__conversions.html
