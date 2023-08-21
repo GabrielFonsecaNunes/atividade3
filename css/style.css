@@ -89,3 +89,14 @@ p {
     line-height: 1.5;
     margin-top: 15px;
 }
+
+.img {
+    width: 42%;
+    height: auto;
+    text-align: center;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid rgb(61, 60, 60); /* Define a cor preta para a borda */
+    border-radius: 10px; /* Define o raio dos cantos arredondados */
+    padding: 20px; /* Adiciona um espaçamento interno para o conteúdo do container */
+}

@@ -16,15 +16,25 @@
   <div class="section">
     <h1 class="section-title">Anexos</h1>
     <p class="section-content">
+      <p>
+        <a href="https://github.com/GabrielFonsecaNunes/atividade3"> 
+          Repo: Github Atividade 3
+        </a>
+      </p>
+      </p>
+      <a href="https://docs.opencv.org/4.x/de/d25/imgproc_color_conversions.html">Color conversions</a> 
+      </p>
+      <p>
+        <a href="https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html"> 
+          Programa de mudança do espaço RGB para HSV, e execute o programa com a webcam, e um objeto colorido.
+        </a>
+      </p>
+      <p>
+        <a href="https://docs.opencv.org/4.x/d8/d01/group__imgproc__color__conversions.html"> 
+          Color Space Conversions (nomes das constantes de conversao de espaço de cor):
+        </a>
+      </p>
     <p> 
-
-    </p>
-    <a href="https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html"> Tutorial Filtragem Imagens OpenCV </a> 
-    </p>
-    <p>
-      <a href="https://docs.opencv.org/4.x/dc/dd3/tutorial_gausian_median_blur_bilateral_filter.html"> 
-        Material Complementar Filtragem Imagens OpenCV </a>
-    </p>
   </div>
 
   <h1>Atividade 3</h1>
@@ -34,18 +44,15 @@
     <p class="section-content">
       O processamento de vídeo desempenha um papel fundamental em diversas áreas, 
       como visão computacional, realidade virtual, jogos, vigilância por vídeo, entre outros. 
-      <br>O foco deste laboratório é discutir sobre métodos de filtragem a partir
+      O foco deste laboratório é discutir sobre a teoria do espaço de cores e a partir 
       a biblioteca OpenCV e aplica-las em imagem e vídeo.<br> 
     </p>
     <p class="section-content">
       <h2 class="section-title">Objetivos</h2>
       <ul class="section-content">
-        <li>Aplicar cada um dos tipos de filtragem a partir 
-          <a href="https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html"> Tutorial Filtragem Imagens OpenCV </a>  
-        </li>
+        <li>Estudar e se aprofundar na teoria de conversão de cores.</li>
         <li>
-          Com o programa que faz a leitura da webcam, realize cada um dos experimentos de filtragem do tutorial, na imagem de entrada.
-          Salve os arquivos de imagem filtrada gerados através do próprio programa. 
+          Aprender utilizar os métodos de conversão de cores do OpenCV  
         </li>
       </ul>
     </p>
@@ -109,15 +116,38 @@
           <li>Filtros de efeitos: esses filtros adicionam efeitos especiais a uma imagem, como desfoque, vinheta ou preto e branco. </li>
         </ul>
       </p>
+
+      <p class="section-content">
+        <b> Espaço de cores: </b>Um espaço de cores é um modelo matemático para representar cores. Ele define como as cores são representadas e quantizadas, 
+        e como elas são interpretadas pelo olho humano.
+      </p>
+      <p class="section-content">
+        Os espaços de cores são importantes para o processamento de vídeo porque eles permitem que as cores sejam manipuladas de forma precisa e consistente.
+        Eles também são importantes para a reprodução de cores precisas em diferentes dispositivos, como monitores, TVs e impressoras.
+      </p>
+      <p class="section-content">
+        Existem muitos espaços de cores diferentes disponíveis, cada um com suas próprias vantagens e desvantagens. Alguns dos espaços de cores mais comuns para processamento de vídeo incluem:
+        <ul class="section-content">
+          <li><b>RGB</b>: O espaço de cores RGB é o mais comumente usado em processamento de vídeo. Ele é baseado na mistura de três componentes de cores primárias: vermelho, verde e azul. </li>
+          <li><b>YUV:</b> O espaço de cores YUV é um espaço de cores de componentes de luminância e croma. Ele é frequentemente usado para compressão de vídeo, pois é mais eficiente do que RGB.</li>
+          <li><b>HSV:</b> O espaço de cores HSV é um espaço de cores de matiz, saturação e valor. Ele é frequentemente usado para processamento de imagem, pois é fácil de entender e manipular.</li>
+        </ul>
+      </p>
+      <p class="section-content">
+        A escolha do espaço de cores correto para um determinado aplicativo depende de uma variedade de fatores, incluindo a qualidade de reprodução de cores desejada, o tamanho do arquivo de
+        vídeo e as limitações do dispositivo de reprodução.
+      </p>
+      <p class="section-content">
+        Correção de cores: Os espaços de cores podem ser usados para corrigir cores incorretas ou desbotadas em um vídeo.
+        Edição de vídeo: Os espaços de cores podem ser usados para manipular cores em um vídeo, como alterar a saturação ou a temperatura da cor.
+        Compressão de vídeo: Os espaços de cores podem ser usados para comprimir vídeos, reduzindo o tamanho dos arquivos sem perder muita qualidade.
+        Reprodução de vídeo: Os espaços de cores podem ser usados para garantir que as cores de um vídeo sejam reproduzidas de forma precisa em diferentes dispositivos.
+      </p>
     </p>
   </div>
-
+  
   <div class="section">
     <h2 class="section-title">Materiais e Métodos</h2>
-    <p class="section-content">      
-      Este relatório foi divido em duas partes. Nesta primeira parte do laboratório, aplicaremos o métodos de filtragem de Média, Gaussiano, Mediano e Bilateral nas imagens do Lab1 - parte 3 e salvaremos a imagens para comparação. 
-      Em seguida, na parte 2, com o programa que faz a leitura da webcam aplicaremos filtros de Média, Gaussiano, Mediano e Bilateral e salvaremos a imagens para comparação. 
-    </p>
     <h2 class="section-title">Materiais</h2>
     <p class="section-content">
       A seguir, apresentamos os materiais utilizados em conjunto com suas respectivas descrições, a fim de criar um ambiente de trabalho adequado para a realização da 
@@ -136,137 +166,367 @@
         <li class="item">IDE Visual Studio Code: Visual Studio Code: O Visual Studio Code é uma IDE (Integrated Development Environment) popular e de código aberto, que fornece um ambiente de
           desenvolvimento completo para escrever, depurar e executar programas em Python. É a IDE escolhida para o desenvolvimento das atividades práticas durante o laboratório.</li>
       </ul>
-
-    </p class="section-content"> 
-
+    </p> 
     <h2 class="section-title">Métodos</h2>
-
-    <p class="section-content">
-      Nesta primeira parte do trabalho foi desenvolvido o programa que faz a leitura e aplicação do filtro na imagem. 
-      Abaixo segue o programa desenvolvido juntamente com a descrição do seu funcionamento com diagramas de blocos.  
+    <p class="section-content">      
+      O desenvolvimento do trabalho será feito em três partes. Nesta primeira parte devemos: 1.a) Estudaremos e executaremos o <a href="https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html"> 
+        programa disponível </a> fornecido para converter imagens do espaço RGB para HSV, a fim de fazer o rastreamento de uma cor em um objeto colorido.
+        Nesta segunda parte, devemos fazer: 2.a) - Modificar o programa para salvar as imagens da webcam, da máscara e do resultado ao toque de uma tecla.</li>
+        2.b) - Modificar o programa realizar o rastreamento de uma cor, e aplicar na imagem resultante (imagem depois do mascaramento) 
+        um dos filtros da aula anterior, na imagem de entrada da webcam, tal que a imagem fique visualmente agradável. 2.c) Adicionalmente modifique o programa para gravar
+        um video dos experimentos de rastreamento. Na última parte, 3.a) será feito feito outro programa para extrair mais de um objeto colorido, por exemplo, será feita o rastreamento objetos vermelhos, azuis e verdes simultaneamente.   
     </p>
-    
-    <div class="title">L2_filtros.py</div>
+      
+    </p>
+    <div class="section-content">
+      Abaixo segue o programa estudado para converter imagens do espaço RGB para HSV, a fim de fazer o rastreamento de uma cor em um objeto colorido e sua descrição de funcionamento.
+    </div>
+    <div class="title">Programa rastreamento de objeto por mascara de cor Lab_1a.py</div>
     <div class="code-container" id="component-1">
       <textarea readonly>
+import cv2 as cv
+import numpy as np
+cap = cv.VideoCapture(0)
+
+while(1):
+    # Take each frame
+    _, frame = cap.read()
+    # Convert BGR to HSV
+    hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+    # define range of blue color in HSV
+    lower_blue = np.array([110,50,50])
+    upper_blue = np.array([130,255,255])
+    # Threshold the HSV image to get only blue colors
+    mask = cv.inRange(hsv, lower_blue, upper_blue)
+    # Bitwise-AND mask and original image
+    res = cv.bitwise_and(frame,frame, mask= mask)
+    cv.imshow('frame',frame)
+    cv.imshow('mask',mask)
+    cv.imshow('res',res)
+    k = cv.waitKey(5) & 0xFF
+    if k == 27:
+        break
+cv.destroyAllWindows()  
+      </textarea>
+      <button class="copy-button" onclick="copyCode('component-1')">Copiar</button>
+    </div>
+    <div class="section-content">
+      O programa captura o vídeo da câmera, converte-o para o espaço de cores HSV e segmenta a região azul dentro de uma faixa 
+      especificada. Os quadros originais, a máscara binária da cor azul e a imagem resultante são exibidos em janelas separadas. 
+      O programa é encerrado ao pressionar a tecla "q". Segue abaixo o print da tela da execução do programa padrão.
+    </div>
+    <p class="title">Imagens Mascara Rastreamento Azul L3_1a.py</p>
+    <div>
+      <img src="img/img_program_default.jpg">
+    </div>
+  </div>
+  <div class="section-content">
+    Abaixo segue o programa modificado para salvar a imagem após apertar uma tecla juntamente com seu diagrama de blocos e imagens.
+  </div>
+  <p class="title">Programa L3_2a.py</p>
+  <div class="code-container" id="component-1">
+    <textarea readonly>
 import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-def plot_blur(img, save=False):
-    """
-    Plota o original e o filtrado com o filtro Blur.
+cap = cv.VideoCapture(0)
 
-    Args:
-        img (img): A imagem a ser filtrada.
-        save (bool): Se True, salva a imagem filtrada.
-    """
-    img_blur = cv.blur(img, (3, 3))
-    fig, (ax1, ax2)= plt.subplots(nrows=1, ncols=2)
-    plt.title("Original vs Blur", loc = "center")
-    ax1.imshow(img)
-    ax1.set_title("Original")
-    ax2.imshow(img_blur)
-    ax2.set_title("Blur")
-    if save:
-        plt.savefig("Blur Media.jpg")
-    plt.show()
+while(True):
+    # Take each frame
+    _, frame = cap.read()
+    # Convert BGR to HSV
+    hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+    # define range of blue color in HSV
+    lower_blue = np.array([110,50,50])
+    upper_blue = np.array([130,255,255])
+    # Threshold the HSV image to get only blue colors
+    mask = cv.inRange(hsv, lower_blue, upper_blue)
+    # Bitwise-AND mask and original image
+    res = cv.bitwise_and(frame,frame, mask= mask)
+    cv.imshow('frame',frame)
+    cv.imshow('mask',mask)
+    cv.imshow('res',res)
+    
+    k = cv.waitKey(3)
+    if k == ord("q"):
+        cv.imwrite(filename="Controle_Original.jpg", img= frame)
+        cv.imwrite(filename="Controle_Mask.jpg", img= mask)
+        cv.imwrite(filename="Controle_Res.jpg", img = res)
+        break
 
-def plot_gaussian_blur(img, save=False):
-    """
-    Plota o original e o filtrado com o filtro Gaussiano.
-
-    Args:
-        img (img): A imagem a ser filtrada.
-        save (bool): Se True, salva a imagem filtrada.
-    """
-    img_blurg = cv.GaussianBlur(img, (3, 3), 0)
-    fig, (ax1, ax2)= plt.subplots(nrows=1, ncols=2)
-    plt.title("Original vs Blur Fitro Gaussiano", loc = "center")
-    ax1.imshow(img)
-    ax1.set_title("Original")
-    ax2.imshow(img_blurg)
-    ax2.set_title("Blur Fitro Gaussiano")
-    if save:
-        plt.savefig("FiltroGaussiano.jpg")
-    plt.show()
-
-def plot_median_blur(img, save=False):
-    """
-    Plota o original e o filtrado com o filtro Mediano.
-    Args:
-        img (img): A imagem a ser filtrada.
-        save (bool): Se True, salva a imagem filtrada.
-    """
-    img_blurmedian = cv.medianBlur(img, 5)
-    fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2)
-    plt.title("Original vs Blur Fitro Mediano", loc = "center")
-    ax1.imshow(img)
-    ax1.set_title("Original")
-    ax2.imshow(img_blurmedian)
-    ax2.set_title("Blur Fitro Mediano")
-    if save:
-        plt.savefig("FiltroMediano.jpg")
-    plt.show()
-
-def plot_bilateral_filter(img, save=False):
-    """
-    Plota o original e o filtrado com o filtro Bilateral.
-    Args:
-        img (img): A imagem a ser filtrada.
-        save (bool): Se True, salva a imagem filtrada.
-    """
-    img_blurbl = cv.bilateralFilter(img, 9, 75, 75)
-    fig, (ax1, ax2)= plt.subplots(nrows=1, ncols=2)
-    plt.title("Original vs Blur Fitro Bilateral", loc = "center")
-    ax1.imshow(img)
-    ax1.set_title("Original")
-    ax2.imshow(img_blurbl)
-    ax2.set_title("Blur Fitro Bilateral")
-    if save:
-        plt.savefig("Bilateral.jpg")
-    plt.show()
-
-
-# Caminho da Imagem
-path_img = "./Laboratorio2/messi5.jpg"
-
-# Leitura da Imagem
-img = cv.imread(path_img)
-
-# Verificando se a imagem existe
-assert img is not None, "file not could be read"
-
-plot_blur(img, save= True)
-plot_gaussian_blur(img, save= True)
-plot_median_blur(img, save= True)
-plot_bilateral_filter(img, save= True)
-        
-      </textarea>
-      <button class="copy-button" onclick="copyCode('component-1')">Copiar</button>
-    </div>
-    <div class="title">Diagrama de Blocos L1_filtros.py</div>
-    <div>
-      <img src="./img/diagrama_imagem.jpeg" alt="Diagrama" class="fluxograma">
-    </div>
-    <div class="section-content">
-      Comentario... resultados
-    </div>
+cv.destroyAllWindows()  
+    </textarea>
+    <button class="copy-button" onclick="copyCode('component-1')">Copiar</button>
   </div>
+  <p class="title">Diagrama Blocos Mascaramento de Cor com salvamento da Imagem</p>
+  <div>
+    <img src="img/diagrama_01.png" alt="Diagrama" class="fluxograma">
+  </div>
+  <p class="section-content">
+    Imagens Programa L3_2a.py
+  </p>
+  <div>
+    <img src="img/Controle_Original.jpg" alt="Diagrama" class="fluxograma">
+  </div>
+  <div>
+    <img src="img/Controle_Mask.jpg" alt="Diagrama" class="fluxograma">
+  </div>
+  <div>
+    <img src="img/Controle_Res.jpg" alt="Diagrama" class="fluxograma">
+  </div>
+  <div class="section-content">
+    Com base no programa anterior, foi adicionado um filtro Gaussiano ao programa para suavizar regiões que o mascaramento pela cor não conseguiu preservar devido a algum ruído.
+    Segue abaixo o programa com a adição da aplicação do filtro Gaussiano, juntamente com seu diagrama de blocos:
+  </div>
+  <p class="title">Programa L3_2b.py</p>
+  <div class="code-container" id="component-1">
+    <textarea readonly>
+import numpy as np
+import cv2 as cv
+import matplotlib.pyplot as plt
+
+cap = cv.VideoCapture(0)
+
+while(True):
+    # Take each frame
+    _, frame = cap.read()
+    # Convert BGR to HSV
+    hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+    # define range of blue color in HSV
+    lower_blue = np.array([90,50,50])
+    upper_blue = np.array([130,255,255])
+    # Threshold the HSV image to get only blue colors
+    mask = cv.inRange(hsv, lower_blue, upper_blue)
+    # Apply Gaussian Bluer Filter
+    mask_filter = cv.GaussianBlur(mask, (3, 3), 0)
+    # Bitwise-AND mask and original image
+    res = cv.bitwise_and(frame,frame, mask= mask)
+    cv.imshow('frame',frame)
+    cv.imshow('mask',mask)
+    cv.imshow('res',res)
+    
+    k = cv.waitKey(3)
+    if k == ord("q"):
+        cv.imwrite(filename="Controle_Original_b.jpg", img= frame)
+        cv.imwrite(filename="Controle_Mask_b.jpg", img= mask)
+        cv.imwrite(filename="Controle_Res_b.jpg", img = res)
+        break
+
+cv.destroyAllWindows()
+    </textarea>
+    <button class="copy-button" onclick="copyCode('component-1')">Copiar</button>
+  </div>
+  <div>
+    <img src="img/diagrama_02.png" alt="Diagrama" class="fluxograma">
+  </div>
+  <p class="section-content">
+    Imagens Programa L3_2b.py
+  </p>
+  <div>
+    <img src="img/Controle_Original_b.jpg" alt="Diagrama" class="fluxograma">
+  </div>
+  <div>
+    <img src="img/Controle_Mask_b.jpg" alt="Diagrama" class="fluxograma">
+  </div>
+  <div>
+    <img src="img/Controle_Res_b.jpg" alt="Diagrama" class="fluxograma">
+  </div>
+  <p class="section-content">
+    Foi feito alteração no programa anterior para gravação de cada janela (imagem, mascara, mascara com residuo) e alteração no filtro de cores de azul para laranja 
+    (cor do controle). Segue abaixo o programa com modificação L3_2c.py para gravação juntamente com seu diagrama de blocos:
+  </p>
+  <p class="title">Programa L3_2c.py</p>
+  <div class="code-container" id="component-1">
+    <textarea readonly>
+import numpy as np
+import cv2 as cv
+import matplotlib.pyplot as plt
+
+# Video Capture
+cap = cv.VideoCapture(0)
+
+# Obtém as dimensões do vídeo original
+frame_width = int(cap.get(3))
+frame_height = int(cap.get(4))
+
+# VideoWriter
+out_origin = cv.VideoWriter("output_origin.webm", cv.VideoWriter_fourcc(*'VP80'), 20, (frame_width, frame_height))
+
+# VideoWriter
+out_mask = cv.VideoWriter("output_mask.webm", cv.VideoWriter_fourcc(*'VP80'), 20, (frame_width, frame_height))
+
+# VideoWriter
+out_res = cv.VideoWriter("output_res.webm", cv.VideoWriter_fourcc(*'VP80'), 20, (frame_width, frame_height))
+
+while(True):
+  # Take each frame
+  _, frame = cap.read()
+  # Convert BGR to HSV
+  hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+  
+  # define range of blue color in HSV
+  lower_orange = np.array([0, 100, 100])
+  upper_orange = np.array([30, 255, 255])
+  # Threshold the HSV image to get only blue colors
+  mask = cv.inRange(hsv, lower_orange, upper_orange)
+  # Apply Gaussian Bluer Filter
+  mask_filter = cv.GaussianBlur(mask, (3, 3), 0)
+  
+  # Bitwise-AND mask and original image
+  res = cv.bitwise_and(frame,frame, mask= mask)
+  
+  cv.imshow('frame',frame)
+  cv.imshow('mask',mask)
+  cv.imshow('res',res)
+
+  # Escreve o frame no arquivo de vídeo
+  out_origin.write(frame)
+  # Escreve o frame no arquivo de vídeo
+  out_mask.write(mask_filter)
+  # Escreve o frame no arquivo de vídeo
+  out_res.write(res)    
+
+  q = cv.waitKey(3)
+  if q == ord("q"):
+      break
+
+out_origin.release()
+out_mask.release()
+out_res.release()
+cap.release()
+cv.destroyAllWindows()
+  </textarea>
+  <button class="copy-button" onclick="copyCode('component-1')">Copiar</button>
+</div>
+<div>
+  <img src="img/diagrama_03.png" alt="Diagrama" class="fluxograma">
+</div>
+<p>
+  <video width="640" height="480" controls>
+    <source src="video/output_origin.webm" type="video/webm">
+    Seu navegador não suporta o elemento de vídeo.
+  </video>      
+</p>
+<p>
+  <video width="640" height="480" controls>
+    <source src="video/output_res.webm" type="video/webm">
+    Seu navegador não suporta o elemento de vídeo.
+  </video>      
+</p> 
+<div class="section-content">
+  Foi feito alteração no programa anterior para gravação de cada janela (imagem, mascara, mascara com residuo) para combinar o rastreamento de duas cores simultaneamente (Laranja e azul). 
+
+  Segue abaixo o programa com modificação L3_3a.py para gravação juntamente com seu diagrama de blocos: 
+</div> 
+<p class="title">Programa L3_3a.py</p>
+<div class="code-container" id="component-1">
+  <textarea readonly>
+import numpy as np
+import cv2 as cv
+import matplotlib.pyplot as plt
+
+# Video Capture
+cap = cv.VideoCapture(0)
+
+# Obtém as dimensões do vídeo original
+frame_width = int(cap.get(3))
+frame_height = int(cap.get(4))
+
+# VideoWriter
+out_origin = cv.VideoWriter("output_origin_combined.webm", cv.VideoWriter_fourcc(*'VP80'), 20, (frame_width, frame_height))
+
+# VideoWriter
+out_mask = cv.VideoWriter("output_mask_combined.webm", cv.VideoWriter_fourcc(*'VP80'), 20, (frame_width, frame_height))
+
+# VideoWriter
+out_res = cv.VideoWriter("output_res_combined.webm", cv.VideoWriter_fourcc(*'VP80'), 20, (frame_width, frame_height))
+
+while(True):
+    # Take each frame
+    _, frame = cap.read()
+
+    # Apply Gaussian Bluer Filter
+    frame = cv.GaussianBlur(frame, (3, 3), 0)
+
+    # Convert BGR to HSV
+    hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+    
+    # define range of blue color in HSV
+    lower_blue = np.array([90,50,50])
+    upper_blue = np.array([130,255,255])
+    
+    # define range of blue color in HSV
+    lower_orange = np.array([0, 100, 100])
+    upper_orange = np.array([30, 255, 255])
+
+    # Criando as máscaras para as cores laranja e azul
+    mask_orange = cv.inRange(hsv, lower_orange, upper_orange)
+    mask_blue = cv.inRange(hsv, lower_blue, upper_blue)
+
+    # Combinando as máscaras
+    combined_mask = cv.bitwise_or(mask_orange, mask_blue)
+
+    # Aplicando a máscara combinada à imagem original
+    res = cv.bitwise_and(frame, frame, mask=combined_mask)
+    
+    cv.imshow('frame',frame)
+    cv.imshow('mask',combined_mask)
+    cv.imshow('res',res)
+
+    # Escreve o frame no arquivo de vídeo
+    out_origin.write(frame)
+    # Escreve o frame no arquivo de vídeo
+    out_mask.write(combined_mask)
+    # Escreve o frame no arquivo de vídeo
+    out_res.write(res)    
+
+    q = cv.waitKey(3)
+    if q == ord("q"):
+        break
+
+out_origin.release()
+out_mask.release()
+out_res.release()
+cap.release()
+cv.destroyAllWindows()
+    </textarea>
+    <button class="copy-button" onclick="copyCode('component-1')">Copiar</button>
+  </div>
+  <div>
+    <img src="img/diagrama_04.png" alt="Diagrama" class="fluxograma">
+  </div>
+  <p>
+    <video width="640" height="480" controls>
+      <source src="video/output_origin_combined.webm" type="video/webm">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>      
+  </p>  
+  <p>
+    <video width="640" height="480" controls>
+      <source src="video/output_res_combined.webm" type="video/webm">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>      
+  </p> 
   <div class="section">
     <h2 class="section-title">Resultados e Análises</h2>
     <p class="section-content">
       Durante a execução das atividades propostas, foram obtidos os seguintes resultados:
     </p>
     <p class="section-content">
-      ...
+      Foram realizadas diversas iterações das atividades propostas, desde a conversão de imagens do espaço RGB para o espaço de cores HSV, passando pela aplicação de máscaras para o rastreamento de cores específicas, até a combinação de múltiplas máscaras para rastreamento simultâneo de diferentes cores. 
+      Observou-se que a abordagem de segmentação por cores apresenta uma abordagem eficaz para identificação e rastreamento de objetos coloridos em vídeos em tempo real.
+      Além disso, a adição de filtros como o filtro Gaussiano permitiu suavizar regiões que poderiam ser afetadas por ruído, melhorando a qualidade do rastreamento.
+      A combinação de máscaras de cores diferentes possibilitou a detecção de múltiplos objetos simultaneamente, expandindo as capacidades do sistema de rastreamento.
     </p>
   </div>
-
   <div class="section">
     <h2 class="section-title">Conclusões e Comentários Finais</h2>
     <p class="section-content">
-      Neste laboratório, ... .
+      Neste laboratório, exploramos os fundamentos do processamento de vídeo utilizando a biblioteca OpenCV e a linguagem Python. Através das atividades propostas, foi possível compreender como converter imagens entre diferentes espaços de cores, aplicar máscaras para rastreamento de cores específicas, realizar filtragem de imagens e combinar múltiplas máscaras para rastreamento simultâneo.
+      O uso de filtros como o filtro Gaussiano permitiu melhorar a qualidade do rastreamento, suavizando regiões afetadas por ruído.
+      Além disso, a aplicação do conhecimento teórico sobre espaços de cores e processamento de imagens em casos práticos demonstrou a importância desses conceitos em aplicações de visão computacional.
+      Este laboratório contribuiu para a ampliação do entendimento sobre processamento de vídeo, fornecendo habilidades práticas para o desenvolvimento de sistemas de rastreamento de objetos em tempo real.
     </p>
   </div>
 

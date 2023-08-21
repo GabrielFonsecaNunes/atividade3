@@ -10,7 +10,8 @@ https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
 
 (a) Modifique este programa para salvar as imagens da webcam, da mascara, e do resultado, ao toque de uma tecla.
 
-(b) Modifique novamente, para realizar o rastreamento de uma cor, e aplicar na imagem resultante (imagem depois do mascaramento)  um dos filtros da aula anterior, na imagem de entrada da webcam, tal que a imagem fique visualmente agradável.
+(b) Modifique novamente, para realizar o rastreamento de uma cor, e aplicar na imagem resultante (imagem depois do mascaramento) 
+um dos filtros da aula anterior, na imagem de entrada da webcam, tal que a imagem fique visualmente agradável.
 
 (c) Adicionalmente modifique o programa para gravar um video dos experimentos de rastreamento.
 
